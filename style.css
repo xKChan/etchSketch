@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+#container {
+        margin: auto;
+        margin-top: 90px;
+        width: 500px;
+        height: 500px;
+        border: 3px solid green;
+        display: flex;
+        
+}
+
+#container, 
+.cols,
+.rows {
+    flex: 1;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+}
+
+.rows {
+    border-top: 1px black solid;
+}
+
+
