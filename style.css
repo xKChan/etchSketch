@@ -33,8 +33,14 @@
     background-color: black;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
 button {
-    width: auto;
-    margin: 50px 50%;
+    margin-top: 30px;
     padding: 5px 20px;
 }
