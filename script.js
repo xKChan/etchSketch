@@ -59,7 +59,7 @@ function newGridSize() {
 }
 
 
-
+// Call Functions
 createGrid(gridSize);
 draw();
 
@@ -67,51 +67,3 @@ draw();
 // Event Listeners for buttons
 reset.addEventListener('click', resetGrid);
 newGrid.addEventListener('click', newGridSize);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function reset() {
-//     reset.addEventListener('click', () => {
-//         draw.forEach(row => {
-//             row.classList.remove('hovered');
-//         })
-//     });
-// }
-
-// newGrid.addEventListener('click', () => {
-//     while (container.firstChild) {
-//         container.removeChild(container.lastChild);
-//     }
-
-//     // Create new grid
-//     let newSize = prompt('Grid Size: ');
-//     createGrid(newSize);
-// });
