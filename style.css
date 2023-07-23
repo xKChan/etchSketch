@@ -29,3 +29,12 @@
 }
 
 
+.hovered {
+    background-color: black;
+}
+
+button {
+    width: auto;
+    margin: 50px 50%;
+    padding: 5px 20px;
+}

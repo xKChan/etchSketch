@@ -1,12 +1,13 @@
 const TOTALROWS = 16;
 const TOTALCOLUMNS = 16;
 
-// Selects container class div
+
 const container = document.querySelector('#container');
+const reset = document.querySelector('button');
 
 
 // Function to create a grid
-function createGrid() {
+function createGrid(TOTALCOLUMNS, TOTALROWS) {
     // Create grid Columns
     for (let i = 0; i < TOTALCOLUMNS; i++) {
         const createGrid = document.createElement('div');
@@ -23,6 +24,21 @@ function createGrid() {
     }
 }
 
+createGrid(TOTALCOLUMNS, TOTALROWS);
 
 
-createGrid();
+// Draw lines, when hovering over div
+const draw = document.querySelectorAll('.rows');
+draw.forEach(row => {
+    row.addEventListener('mouseover', () => {
+        row.classList.add('hovered');
+    });
+});
+
+reset.addEventListener('click', () => {
+    draw.forEach(row => {
+        row.classList.remove('hovered');
+    })
+
+});
+
